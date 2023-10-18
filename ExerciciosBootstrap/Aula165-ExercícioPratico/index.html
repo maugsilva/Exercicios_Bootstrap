@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Bootstrap</title>
+    <!-- Adicione o link para o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Adicione um arquivo de estilo personalizado para cores -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <div class="container mt-5">
+        <h1 class="text-center">Recursos do Meu Site</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="fas fa-image"></i>
+                    <div class="container mt-5">
+                      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                          <!-- Indicadores -->
+                          <ol class="carousel-indicators">
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                          </ol>
+                          
+                          <!-- Slides -->
+                          <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="images/conjuntoNike.png" alt="Imagem 1" class="d-block w-100">
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="images/mochilaNike.png" alt="Imagem 2" class="d-block w-100">
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="images/tenis1.png" alt="Imagem 3" class="d-block w-100">
+                              </div>
+                          </div>
+                          
+                          <!-- Controles de Navegação -->
+                          <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Anterior</span>
+                          </a>
+                          <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Próximo</span>
+                          </a>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="fas fa-hand-pointer"></i>
+                    <h3>Botões</h3>
+                    <div class="container mt-5">
+                      <button class="btn btn-primary">Botão Primário</button>
+                      <button class="btn btn-secondary">Botão Secundário</button>
+                      <button class="btn btn-success">Botão de Sucesso</button>
+                      <button class="btn btn-danger">Botão de Perigo</button>
+                      <button class="btn btn-warning">Botão de Aviso</button>
+                      <button class="btn btn-info">Botão de Informação</button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="fas fa-list"></i>
+                    <h3>Listas</h3>
+                    <div class="container mt-5">
+                      <ul class="list-group">
+                          <li class="list-group-item">Item 1</li>
+                          <li class="list-group-item">Item 2</li>
+                          <li class="list-group-item">Item 3</li>
+                          <li class="list-group-item">Item 4</li>
+                      </ul>
+                  </div>
+              
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="fas fa-table"></i>
+                    <h3>Tabelas</h3>
+                    <p> <div class="container mt-5">
+                      <table class="table table-bordered table-striped">
+                          <thead>
+                              <tr>
+                                  <th>ID</th>
+                                  <th>Nome</th>
+                                  <th>Email</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>João</td>
+                                  <td>joao@example.com</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Maria</td>
+                                  <td>maria@example.com</td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>Carlos</td>
+                                  <td>carlos@example.com</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Alerts</h3>
+                    <p> <div class="container mt-5">
+                      <!-- Alerta de sucesso -->
+                      <div class="alert alert-success" role="alert">
+                          <strong>Sucesso!</strong> Seu pedido foi processado com êxito.
+                      </div>
+                      <!-- Alerta de informação -->
+                      <div class="alert alert-info" role="alert">
+                          <strong>Informação:</strong> Temos uma nova atualização disponível.
+                      </div>
+                      <!-- Alerta de aviso -->
+                      <div class="alert alert-warning" role="alert">
+                          <strong>Aviso:</strong> O prazo de entrega foi alterado para amanhã.
+                      </div>
+                      <!-- Alerta de erro -->
+                      <div class="alert alert-danger" role="alert">
+                          <strong>Erro:</strong> Houve um problema ao processar seu pedido.
+                      </div>
+                  </div></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <i class="fas fa-images"></i>
+                    <h3>Carousel</h3>
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                      </div>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <img src="images/conjuntoNike.png" alt="logo soulon" class="d-block" style="width: 100%;">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/mochilaNike.png" alt="logo soulon" class="d-block" style="width: 100%;">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="images/tenis1.png" alt="logo soulon" class="d-block" style="width: 100%;">
+                          </div>                        
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 offset-md-4">
+                <div class="feature">
+                    <i class="fas fa-chevron-circle-up"></i>
+                    <h3>Collapse</h3>
+                    <div class="container mt-5">
+                      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          Clique para expandir
+                      </button>
+                      <div class="collapse" id="collapseExample">
+                          <div class="card card-body">
+                              Este é um conteúdo elegante e sofisticado dentro do elemento Collapse.
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; Todos os direitos reservados 2023 - Desenvolvido por Matheus Augusto</p>
+        </div>
+    </footer>
+
+    <!-- Inclua a biblioteca Font Awesome para os ícones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <!-- Adicione os scripts do Bootstrap e do jQuery (necessário para alguns componentes) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

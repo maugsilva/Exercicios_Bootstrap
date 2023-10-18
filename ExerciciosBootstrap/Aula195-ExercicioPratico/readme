@@ -1,0 +1,21 @@
+EXERCÍCIO PRÁTICO
+
+Crie uma página web contendo as seguintes especificações:
+
+A página deve ter um MENU de navegação usando NAVBAR lincando para outras páginas com a mesma estilização;
+A página deve ter pelo menos três sessões laterais (ex. about me, links, imagens, etc);
+A página deve ter conteúdo principal com imagens, e pelo menos dois exemplos de tipografia;
+A página deve ter um rodapé;
+A página deve ser responsiva;
+A página deve ter pelo menos duas cores em Bootstrap;
+A página deve obrigatoriamente fazer uso de:
+Imagens
+Botões
+Listas
+Tabelas
+Alerts
+Carousel 
+Collapse *
+
+
+*Você pode usar mais de uma página e criar links internos, para criar uma harmonia entre esses itens.

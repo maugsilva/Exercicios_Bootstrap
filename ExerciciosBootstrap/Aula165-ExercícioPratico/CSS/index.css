@@ -1,0 +1,22 @@
+#navbar{
+    background: fixed;
+    background-color: black;
+    flex: content;
+}
+
+#text-navbar {
+    color: white;
+    text-align: center;
+    letter-spacing: 10px;
+    font-family: monospace;
+    margin-bottom: 10;
+    margin-top: 10;
+    text-shadow: 2px 2px 2px rgb(50, 143, 249);
+}
+
+#nav{
+    background: fixed;
+    background-color: black;
+    display: block; 
+    justify-content: space-between;
+}
